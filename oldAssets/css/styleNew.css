@@ -1,0 +1,37 @@
+﻿.lp-countEx {
+  display: inline-block;
+  float: left;
+}
+.lp-countEx div {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d0d0d0;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.lp-countEx div:hover {
+  background: #73b226;
+  color: #fff;
+  border-color: #73b226;
+}
+.lp-countEx div.plus {
+  float: left;
+}
+.lp-countEx div.plus {
+  float: right;
+}
+.lp-countEx input {
+  width: 60px;
+  height: 40px;
+  float: right;
+  border: none;
+  border-radius: none;
+  text-align: center;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  background: transparent;
+}
