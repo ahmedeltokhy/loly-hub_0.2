@@ -194,7 +194,7 @@
 	
         window.onload = function () {
 		     
-		<!---------------------------------------hala Edit----------------------------------!>
+		//<!---------------------------------------hala Edit----------------------------------!>
                 $('#filer_input2').change(function()
 	 {
 	 var fileSize , maxSize;
@@ -210,7 +210,7 @@
 	                 $('#msg').css('color','green');
 	            }
 	              });
-			<!-------------------------end edit-------------------------------------------------->
+			//<!-------------------------end edit-------------------------------------------------->
             $("#Submit1").click(function () {
                 var imageSRC = $(".jFiler-item-thumb-image img")[0].src;
                 var programName = $("#Nametxt").val();
