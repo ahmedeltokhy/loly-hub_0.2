@@ -31,6 +31,15 @@ namespace loly_hub_0._2.admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputFile filer_input2;
         
         /// <summary>
+        /// msg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl msg;
+        
+        /// <summary>
         /// Nametxt control.
         /// </summary>
         /// <remarks>

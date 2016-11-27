@@ -120,8 +120,8 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
-                                                <input type="number" class="form-control" id="maxPoints" runat="server" placeholder="Maximum Points">
-                                            </div>
+                                                <input type="number" class="form-control" id="maxPoints" runat="server" placeholder="Maximum Points">                     
+                                               </div>
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
@@ -194,23 +194,25 @@
 	
         window.onload = function () {
 		     
-		//<!---------------------------------------hala Edit----------------------------------!>
-                $('#filer_input2').change(function()
-	 {
-	 var fileSize , maxSize;
-	  fileSize=this.files[0].size/1000;
-	  maxSize=300;
-	         if(fileSize >=maxSize){
-	                $('#filer_input2').replaceWith($("#filer_input2").val('').clone(true));
+            //<!---------------------------------------hala Edit----------------------------------!>
+            $('#filer_input2').change(function()
+            {
+                var fileSize , maxSize;
+                fileSize=this.files[0].size/1024;
+                maxSize=300;
+                if(fileSize >=maxSize){
+                    // $('#filer_input2').replaceWith($("#filer_input2").val('').clone(true));
+                    $('#filer_input2').val("");
                     $('#msg').text("Image not uploaded Image size = " + fileSize +" kb/ image size shoulde be less than 300 Kb");
-	                $('#msg').css('color','red');
-	            }
-	            else{
-	                $('#msg').text("Image uploaded successfully Image size = " + fileSize + "kb");
-	                 $('#msg').css('color','green');
-	            }
-	              });
-			//<!-------------------------end edit-------------------------------------------------->
+                    $('#msg').css('color','red');
+                }
+                else{
+                    $('#msg').text("Image uploaded successfully Image size = " + fileSize + "kb");
+                    $('#msg').css('color','green');
+                }
+            });
+            //<!-------------------------end edit-------------------------------------------------->
+          
             $("#Submit1").click(function () {
                 var imageSRC = $(".jFiler-item-thumb-image img")[0].src;
                 var programName = $("#Nametxt").val();
