@@ -72,7 +72,7 @@
                         <div class="icon">
                             <img src="/admin/images/icons/users.png" alt=""></div>
                         <!-- End .icon -->
-                        <h3>Users </h3>
+                        <h3>Branches </h3>
                     </div>
                     <!-- End .section title -->
                     <div class="users-page">
