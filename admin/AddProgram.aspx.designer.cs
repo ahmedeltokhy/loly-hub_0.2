@@ -85,13 +85,13 @@ namespace loly_hub_0._2.admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl rate;
         
         /// <summary>
-        /// revenu control.
+        /// minPoints control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl revenu;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl minPoints;
         
         /// <summary>
         /// maxPoints control.
@@ -103,13 +103,13 @@ namespace loly_hub_0._2.admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl maxPoints;
         
         /// <summary>
-        /// minPoints control.
+        /// revenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl minPoints;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl revenu;
         
         /// <summary>
         /// username control.

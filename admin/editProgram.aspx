@@ -76,12 +76,11 @@
                             <div class="col-lg-8">
                                 <form enctype="multipart/form-data" id="userForm" runat="server" method="post">
                                     <input type="hidden" runat="server" id="idtxt" />
-                                    <div class="input-row ">
+                                     <div class="input-row ">
                                         <input type="file" name="logo" id="filer_input2" runat="server">
                                     </div>
                                     <!-- End .input-row -->
-
-                                    <div class="row">
+                                       <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Old Image</label>
@@ -91,12 +90,46 @@
                                         </div>
                                         <!-- End .col-md-6 -->
                                     </div>
-                                    <!-- End .row -->
-
+						
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
+                                                <label>Program's Name</label>
                                                 <input type="text" class="form-control" id="Nametxt" runat="server" placeholder="Program's Name">
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+
+                                        <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Category</label>
+                                                <select class="form-control" id="categorytxt" runat="server">
+                                                    <option value="-1">-------Select Category---------</option>
+                                                </select>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+
+                                     <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Country</label>
+                                                <select class="form-control" id="country" runat="server">
+                                                    <option value="-1">-------Select Country---------</option>
+                                                </select>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+         
+                                        <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Name Of Value</label>
+                                                <input type="text" class="form-control" id="nameOfValue" runat="server" placeholder="Name Of Value">
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
@@ -108,6 +141,16 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
+                                                <label>URL</label>
+                                                <input type="text" class="form-control" id="url" runat="server" placeholder="URL">
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+
+                                        <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Rate</label>
                                                 <input type="number" class="form-control" id="rate" runat="server" placeholder="Rate">
                                             </div>
                                             <!-- End .input-row -->
@@ -117,18 +160,123 @@
                                     </div>
                                     <!-- End .row -->
 
-                                     <div class="row">
+                                    <div class="row">
+                                         <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Minimum Points</label>
+                                                <input type="number" class="form-control" id="minPoints" runat="server" placeholder="Minimum Points">
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
                                         <div class="col-md-6">
                                             <div class="input-row">
+                                                <label>Maximum Points</label>
+                                                <input type="number" class="form-control" id="maxPoints" runat="server" placeholder="Maximum Points">
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+
+                                    <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="input-row">
+                                                <label>Revenu</label>
                                                 <input type="number" class="form-control" id="revenu" runat="server" placeholder="Revenu">
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-
                                     </div>
                                     <!-- End .row -->
 
+                                    <%-- Flags --%>
+
+                                <form class="formCheck">
+                                  <fieldset>
+                                       <legend style="width:20%;">  Authentication  </legend>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input  type="checkbox" id="username" runat="server">username
+                                                </label>
+                                               
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->                                  
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="password" runat="server">password
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input type="checkbox" id="pinCode" runat="server">pin code
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->                         
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input type="checkbox" id="userID" runat="server">user ID
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input  type="checkbox" id="email" runat="server">Email
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="mobile" runat="server">mobile
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="otp" runat="server">otp
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+                              </fieldset> 
+                             </form>
+                                    <%-- End --%>
                                     <div class="input-row">
                                         <a href="#" id="Submit1" class="btn btn-danger">Save</a>
                                         <%--<asp:Button class="btn btn-danger" OnClick="saveProgram"  runat="server" Text="SUBMIT"/>--%>

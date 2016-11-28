@@ -99,7 +99,7 @@ namespace loly_hub_0._2.admin
         public static string delete(string id)
         {
             try
-            {
+            {   
                 SqlConnection con = new SqlConnection(Login.GetConnectionString());
                 string query = "delete LH_programs_list where id =@id";
                 con.Open();

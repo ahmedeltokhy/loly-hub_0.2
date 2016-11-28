@@ -89,11 +89,6 @@
                                         </div>
                                         <!-- End .col-md-6 -->
 
-                                    </div>
-                                    <!-- End .row -->
-
-                                    
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Category</label>
@@ -118,10 +113,7 @@
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-                                     <div class="row">
+         
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Name Of Value</label>
@@ -144,10 +136,6 @@
                                         </div>
                                         <!-- End .col-md-6 -->
 
-                                    </div>
-                                    <!-- End .row -->
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Rate</label>
@@ -161,18 +149,14 @@
                                     <!-- End .row -->
 
                                     <div class="row">
-                                        <div class="col-md-6">
+                                         <div class="col-md-6">
                                             <div class="input-row">
-                                                <label>Revenu</label>
-                                                <input type="number" class="form-control" id="revenu" runat="server" placeholder="Revenu">
+                                                <label>Minimum Points</label>
+                                                <input type="number" class="form-control" id="minPoints" runat="server" placeholder="Minimum Points">
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Maximum Points</label>
@@ -185,10 +169,10 @@
                                     <!-- End .row -->
 
                                     <div class="row">
-                                        <div class="col-md-6">
+                                          <div class="col-md-6">
                                             <div class="input-row">
-                                                <label>Minimum Points</label>
-                                                <input type="number" class="form-control" id="minPoints" runat="server" placeholder="Minimum Points">
+                                                <label>Revenu</label>
+                                                <input type="number" class="form-control" id="revenu" runat="server" placeholder="Revenu">
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
@@ -197,11 +181,26 @@
                                     <!-- End .row -->
 
                                     <%-- Flags --%>
+
+                                <form class="formCheck">
+                                  <fieldset>
+                                       <legend style="width:20%;">  Authentication  </legend>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>username</label>
-                                                <input class="form-control" type="checkbox" id="username" runat="server">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input  type="checkbox" id="username" runat="server">username
+                                                </label>
+                                               
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->                                  
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="password" runat="server">password
+                                                </label>
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
@@ -210,9 +209,19 @@
                                     <!-- End .row -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>password</label>
-                                                <input class="form-control" type="checkbox" id="password" runat="server">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input type="checkbox" id="pinCode" runat="server">pin code
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->                         
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input type="checkbox" id="userID" runat="server">user ID
+                                                </label>
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
@@ -221,42 +230,19 @@
                                     <!-- End .row -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>pin code</label>
-                                                <input class="form-control" type="checkbox" id="pinCode" runat="server">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input  type="checkbox" id="email" runat="server">Email
+                                                </label>
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-                                    <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>user ID</label>
-                                                <input class="form-control" type="checkbox" id="userID" runat="server">
-                                            </div>
-                                            <!-- End .input-row -->
-                                        </div>
-                                        <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>Email</label>
-                                                <input class="form-control" type="checkbox" id="email" runat="server">
-                                            </div>
-                                            <!-- End .input-row -->
-                                        </div>
-                                        <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>mobile</label>
-                                                <input class="form-control" type="checkbox" id="mobile" runat="server">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="mobile" runat="server">mobile
+                                                </label>
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
@@ -266,15 +252,18 @@
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>otp</label>
-                                                <input class="form-control" type="checkbox" id="otp" runat="server">
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input  type="checkbox" id="otp" runat="server">otp
+                                                </label>
                                             </div>
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
                                     </div>
                                     <!-- End .row -->
+                              </fieldset> 
+                             </form>
                                     <%-- End --%>
                                     <div class="input-row">
                                         <a href="#" id="Submit1" class="btn btn-danger">Save</a>
@@ -325,6 +314,24 @@
     <script src="/admin/js/script.js" charset="utf-8"></script>
     <script>
         window.onload = function () {
+		     
+		//<!---------------------------------------hala Edit----------------------------------!>
+                $('#filer_input2').change(function()
+	 {
+	 var fileSize , maxSize;
+	  fileSize=this.files[0].size/1000;
+	  maxSize=300;
+	         if(fileSize >=maxSize){
+	                $('#filer_input2').replaceWith($("#filer_input2").val('').clone(true));
+                    $('#msg').text("Image not uploaded Image size = " + fileSize +" kb/ image size shoulde be less than 300 Kb");
+	                $('#msg').css('color','red');
+	            }
+	            else{
+	                $('#msg').text("Image uploaded successfully Image size = " + fileSize + "kb");
+	                 $('#msg').css('color','green');
+	            }
+	              });
+			//<!-------------------------end edit-------------------------------------------------->
             $("#Submit1").click(function () {
                 var imageSRC = $(".jFiler-item-thumb-image img")[0].src;
                 var programName = $("#Nametxt").val();
