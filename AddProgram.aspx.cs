@@ -59,7 +59,7 @@ namespace loly_hub_0._2
 
 
 
-                    query = "select * from LH_Programs_category";
+                    query = "select * from LH_category";
 
                     con.Open();
 
@@ -69,7 +69,7 @@ namespace loly_hub_0._2
 
                     while (dr.Read())
                     {
-                        ListItem option = new ListItem(dr["name"].ToString(), dr["id"].ToString());
+                        ListItem option = new ListItem(dr["category_name"].ToString(), dr["id"].ToString());
                         programCategory.Items.Add(option);
                     }
 
