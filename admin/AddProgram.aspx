@@ -172,7 +172,7 @@
                                           <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Revenu</label>
-                                                <input type="number" class="form-control" id="Number1" runat="server" placeholder="Revenu">
+                                                <input type="number" class="form-control" id="revenu" runat="server" placeholder="Revenu">
                                             </div>
                                             <!-- End .input-row -->
                                         </div>

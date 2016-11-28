@@ -103,13 +103,13 @@ namespace loly_hub_0._2.admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl maxPoints;
         
         /// <summary>
-        /// Number1 control.
+        /// revenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Number1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl revenu;
         
         /// <summary>
         /// username control.

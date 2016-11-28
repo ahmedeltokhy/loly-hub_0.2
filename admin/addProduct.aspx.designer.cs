@@ -94,15 +94,6 @@ namespace loly_hub_0._2.admin {
         protected global::System.Web.UI.HtmlControls.HtmlSelect RetailerSelect;
         
         /// <summary>
-        /// featured control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox featured;
-        
-        /// <summary>
         /// productExpiry control.
         /// </summary>
         /// <remarks>
@@ -110,6 +101,15 @@ namespace loly_hub_0._2.admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl productExpiry;
+        
+        /// <summary>
+        /// featured control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox featured;
         
         /// <summary>
         /// message control.

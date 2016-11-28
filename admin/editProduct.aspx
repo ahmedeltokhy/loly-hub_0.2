@@ -93,10 +93,6 @@
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <input type="text" class="form-control" id="description" runat="server" placeholder="Description">
@@ -117,11 +113,6 @@
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Earned LP</label>
@@ -143,10 +134,6 @@
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Category</label>
@@ -168,35 +155,6 @@
                                             <!-- End .input-row -->
                                         </div>
                                         <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>Featured</label>
-                                                <input class="form-control" type="checkbox" id="featured" runat="server">
-                                            </div>
-                                            <!-- End .input-row -->
-                                        </div>
-                                        <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-
-                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-row">
-                                                <label>Vertical</label>
-                                                <input class="form-control" type="checkbox" id="isVertical" runat="server">
-                                            </div>
-                                            <!-- End .input-row -->
-                                        </div>
-                                        <!-- End .col-md-6 -->
-                                    </div>
-                                    <!-- End .row -->
-                                  
-                                      <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-row">
                                                 <label>Product Expiry</label>
@@ -207,6 +165,39 @@
                                         <!-- End .col-md-6 -->
                                     </div>
                                     <!-- End .row -->
+                                 <form class="formCheck">
+                                  <fieldset>
+                                       <legend style="width:10%;">Group </legend>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                 <input  type="checkbox" id="featured" runat="server">Featured
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->
+
+                                     <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                <input  type="checkbox" id="isVertical" runat="server">
+                                                    Vertical
+                                                </label>
+                                            </div>
+                                            <!-- End .input-row -->
+                                        </div>
+                                        <!-- End .col-md-6 -->
+                                    </div>
+                                    <!-- End .row -->  
+                                       </fieldset> 
+                                    </form>
+                                    <!-- End form-->
+                                            
                                     <div class="input-row">
                                         <a href="#" id="Submit1" class="btn btn-danger">Save</a>
                                         <%--<asp:Button class="btn btn-danger" OnClick="saveProgram"  runat="server" Text="SUBMIT"/>--%>
