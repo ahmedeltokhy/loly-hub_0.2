@@ -3071,12 +3071,6 @@ a, b, button, h1, h2, h3, h4, h5, h6, i, input, label, li, ol, p, select, span, 
     color: #494949;
     display: inline-block;
 }
-  .jFiler .jFiler-items {
-    overflow: scroll;
-    width: 615px;
-    height: 200px;
-    border: 0.5px #ccc solid;
-    }
 
     .jFiler ul.list-inline li {
         display: inline-block;
@@ -3872,7 +3866,7 @@ hr {
         line-height: 40px;
         margin-right: 10px;
         min-width: 120px;
-        text-align: right;
+ 
         font-size: 14px;
     }
 
@@ -4592,35 +4586,23 @@ footer {
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,.2);
     box-shadow: 0 0 8px rgba(0,0,0,.2);
 }
-.cms-section .container div.users-page #userForm .input-row label {
-    text-align:left;
 
-}
-.cms-section .container div.users-page #userForm .checkbox input{
-    width: 16px;
-    height: 16px;
-    margin-right: 12px;
-}
-.cms-section .container div.users-page #userForm  fieldset{
-    display: block;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 20px;
-    padding-top: 0.35em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove;
-}
-
-    .cms-section .table-page table tr {
+.cms-section .table-page table tr {
         background: #fff;
     }
 
-        .cms-section .table-page table tr td, .cms-section .table-page table tr th {
+.cms-section .table-page table tr td, .cms-section .table-page table tr th {
             text-align: center;
             color: #717171;
         }
 
+
+.cms-section .users-page #userForm row .input-row label {
+
+}
+.cms-section .container {
+
+}
 ::selection {
     background: #d6132b;
     color: #fff;
